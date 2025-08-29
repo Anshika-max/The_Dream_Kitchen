@@ -1,0 +1,42 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.nav-item{
+  padding-left: 20px;
+  font-weight: bold;
+  font-size: 3vh;
+}
+
+.navbar {
+  width: 100% !important;
+}
+
+.footer-link
+{
+  text-decoration: none;
+}
+
+.admin_box{
+  height: 40vh;
+  width: 20vw;
+  border-radius: 10%;
+  background-color: black;  
+  display: flex;
+  justify-content: center;   /* center horizontally */
+  align-items: center; 
+}
+
+.admin_box a{
+  text-decoration: none;
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+
+.admin_grid{
+  display: flex;
+  justify-content:space-evenly;
+}
