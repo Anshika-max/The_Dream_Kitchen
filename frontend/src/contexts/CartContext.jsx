@@ -11,7 +11,7 @@ export const CartProvider = ({ children }) => {
 
   // Create axios client with Authorization header
   const client = axios.create({
-    baseURL: `${server}/carts`,
+    baseURL: `${server}/api/v1/carts`,
     withCredentials: true,
   });
 

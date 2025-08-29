@@ -8,7 +8,7 @@ import server from "../environment";
 export const ProductContext = createContext({});
 
 const client = axios.create({
-  baseURL: `${server}/products`,
+  baseURL: `${server}/api/v1/products`,
 });
 
 export const useProducts = () => useContext(ProductContext);

@@ -5,11 +5,11 @@ const server = IS_PROD
 
     ?
 
-    "https://The_Dream_Kitchenbackend.onrender.com" 
+    "https://the-dream-kitchenbackend.onrender.com" 
     
     :
 
-    "http://localhost:8000/api/v1"
+    "http://localhost:8000"
 
 
 export default server;

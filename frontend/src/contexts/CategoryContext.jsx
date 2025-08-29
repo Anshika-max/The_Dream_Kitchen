@@ -7,7 +7,7 @@ import server from "../environment";
 export const CategoryContext = createContext({});
 
 const client = axios.create({
-  baseURL: `${server}/categories`,
+  baseURL: `${server}/api/v1/categories`,
 });
 
 export const useCategories = () => useContext(CategoryContext);
