@@ -16,7 +16,7 @@ const app = express();
 app.set("port", process.env.PORT || 8000);
 
 app.use(cors({
-    origin: "http://localhost:5173",  // your frontend URL
+    origin: "https://the-dream-kitchenfrontend.onrender.com",  // your frontend URL
     credentials: true,                // allow cookies/headers
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
