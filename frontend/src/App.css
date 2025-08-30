@@ -18,25 +18,43 @@
   text-decoration: none;
 }
 
-.admin_box{
+.admin_grid {
+  display: flex;
+  flex-wrap: wrap;            /* allow boxes to move down on small screens */
+  justify-content: center;    /* center items on all screen sizes */
+  gap: 20px;                  /* spacing between boxes */
+}
+
+.admin_box {
   height: 40vh;
   width: 20vw;
   border-radius: 10%;
-  background-color: black;  
+  background-color: black;
   display: flex;
-  justify-content: center;   /* center horizontally */
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease;
 }
 
-.admin_box a{
+.admin_box:hover {
+  transform: scale(1.05);
+}
+
+.admin_box a {
   text-decoration: none;
   color: white;
-  font-size: 50px;
+  font-size: 2vw;      /* responsive font size */
   font-weight: bold;
 }
 
+/* 📱 Mobile styles */
+@media (max-width: 768px) {
+  .admin_box {
+    width: 80vw;       /* full width on small screens */
+    height: 25vh;      /* shorter height for mobile */
+  }
 
-.admin_grid{
-  display: flex;
-  justify-content:space-evenly;
+  .admin_box a {
+    font-size: 6vw;    /* scale text for small screens */
+  }
 }

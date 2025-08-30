@@ -1,14 +1,20 @@
 import React from "react";
-import Typography from "@mui/material/Typography";
+import {
+  Container,
+  Typography,
+} from "@mui/material";
 
 function OrderHero(){
     return(
         <>
-        <Typography variant="h4" sx={{ textAlign: "center", mt: 2,color:"red" }}>
-          No items in your order.
+        <Container maxWidth="md" sx={{ textAlign: "center", mt: 10 }}>
+        <Typography variant="h5" color="text.secondary">
+          🛒 Your Order is empty.
+          <br></br>
           <br></br>
           <br></br>
         </Typography>
+      </Container>
         </>
     )
 }
